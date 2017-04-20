@@ -1,0 +1,1 @@
+rm out.* *.annot *.cma *.cmo *.cmi splt
