@@ -1,0 +1,14 @@
+(
+relation {relationtype id: int; is_student: bool; is_tall: bool; end}
+	row 33; true; false; end
+	row 54; true; true; end
+end
+
+|||
+
+projection (id is_student)
+)
+
+|||
+
+projection (id)

@@ -1,0 +1,8 @@
+let 
+ {int->int->int}
+ facloop 
+ = fun {int->int->int} n acc -> 1 end
+ in 
+ {int} 
+ 3
+ end

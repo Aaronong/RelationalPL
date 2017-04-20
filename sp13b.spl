@@ -1,0 +1,6 @@
+let {int->int} fac 
+ = fun {int->int} n -> n+1 end
+ in 
+ {int} 
+ fac 3
+ end

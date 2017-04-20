@@ -1,0 +1,10 @@
+let {int->int->int}
+   f = 
+     recfun foo {int->int->int} n -> 
+                if n=0 then fun {int->int} acc -> acc end
+                else fun {int->int} acc -> (foo (n-1) (acc*n)) end
+                end
+             end
+in {int}
+   f 30 1
+end

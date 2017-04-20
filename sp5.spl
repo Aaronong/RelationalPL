@@ -1,0 +1,11 @@
+let {int -> int -> int} 
+    power = recfun mypower {int -> int -> int} 
+               x y -> 
+               if y = 0 
+               then 1 
+               else x * (mypower x (y - 1)) 
+               end
+            end
+            in  {int}
+    (power 17 3)
+end

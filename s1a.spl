@@ -1,0 +1,1 @@
+ fun {int->int->int} x y -> x + y end 3 4

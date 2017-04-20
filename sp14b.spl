@@ -1,0 +1,10 @@
+let {int->int}
+   f = 
+     recfun foo {int->int} n -> 
+                if n=0 then 0
+                else (foo (n-1))+n
+                end
+             end
+in {int}
+   f 4
+end

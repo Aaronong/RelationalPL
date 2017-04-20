@@ -1,0 +1,1 @@
+recfun f {int -> int} n -> (f n) end 3

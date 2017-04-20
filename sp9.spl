@@ -1,0 +1,10 @@
+ let {int} s = 5
+ in  {int}
+     let {int -> int} f = fun {int -> int} x -> x + s end
+     in  {int}
+         let {int} s = 10 
+         in  {int}
+             (f 3)
+         end
+     end
+end

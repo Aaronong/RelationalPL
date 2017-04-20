@@ -1,0 +1,4 @@
+relation {relationtype id: int; age: int; end}
+	row 33; 6; end
+	row 54; 4 + 3; end
+end

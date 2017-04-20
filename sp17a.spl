@@ -1,0 +1,2 @@
+(fun {(int->int)->int} f -> f 4 end) 
+((fun {int->int->int} x -> (fun {int->int} y -> x+y end) end) 3)

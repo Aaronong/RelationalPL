@@ -1,0 +1,14 @@
+let {int->int->int}
+   facloop = 
+     recfun facloop {int->int->int} n acc -> 
+                if n=1 then acc
+                else facloop (n-1) (acc*n)
+                end
+             end
+in {int}
+   let {int->int}
+      fac = fun {int->int} n -> facloop n 1 end
+   in {int}
+      fac 4
+   end
+end

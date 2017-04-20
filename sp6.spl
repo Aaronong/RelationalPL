@@ -1,0 +1,14 @@
+let {int -> int -> (int -> int -> int) -> int -> int}
+    recurse 
+    = recfun recurse 
+          {int -> int -> (int -> int -> int) -> int -> int}
+          x y operation initvalue
+       -> if y = 0 then initvalue 
+          else (operation x 
+                (recurse x (y - 1) operation initvalue))
+          end
+      end
+in {int}
+(recurse 2 3 (fun {int->int->int} x z -> x * z end) 
+         1)
+end

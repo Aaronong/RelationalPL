@@ -1,0 +1,5 @@
+let {int->int->int} f =
+  (fun {int->int->int} x 
+      -> fun {int->int} y -> x+y end end)
+in {int->int} f 4 
+end

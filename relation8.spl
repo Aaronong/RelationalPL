@@ -1,0 +1,19 @@
+(
+relation {relationtype id: int; is_student: bool; is_tall: bool; end}
+	row 33; true; false; end
+	row 54; true; true; end
+end
+
+|||
+
+projection (id is_student)
+)
+
+|><|
+
+relation {relationtype id: int; age: int; is_male: bool; end}
+	row 33; 4 + 3; true; end
+	row 54; 2 * 3; false; end
+	row 23; 3 / 2; 3 > 5; end
+	row 3; 2*2; 45=45; end
+end
